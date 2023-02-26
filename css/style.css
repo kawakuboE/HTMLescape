@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #212529;
+}
+
+.container{
+    background-image: url("../images/auth_layout.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 23px;
+}
+
+.escapeh1{
+    font-size: 26px;
+    font-weight: 250;
+    display: block;
+    margin: 0 auto 0.7em;
+    width: fit-content;
+
+}
+
+textarea{
+    width: 30em;
+    max-width: 100%;
+    height: 16em;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+  }
+   
+  /* Tooltip */
+  .tooltip::after {
+      content: 'Copied!';
+      background: #555;
+      display: inline-block;
+      color: #fff;
+      border-radius: .4rem;
+      position: absolute;
+      left: 50%;
+      top: -20px;
+      transform: translate(-50%, 0);
+      font-size: .75rem;
+      padding: 4px 10px 6px 10px;
+      animation: fade-tooltip .5s 1s 1 forwards;
+  }
+   
+  /* Animation */
+  @keyframes fade-tooltip {
+    to { opacity: 0; }
+  }
+
+.auth-submit-button{
+    width: 14.14vw;
+    height: 5.44vh;
+    margin: 0 auto;
+  }
+
+  .auth-submit-button>.button {
+    width: 100%;
+    height: 100%;
+    background-color: #f6993f;
+    color: #fff;
+    border-radius: 100vh;
+    border: none;
+    font-size: 18px;
+    font-family: AxisStd-Medium;
+}
+
+.arrow{
+    position: relative;
+    width:14.14vw;
+    height: 0.3vh;
+    border: none;
+    background: #f6993f;
+    border-radius: 8px;
+    padding: 1em;
+    text-align:center;
+    line-height: 1.2vh;
+    color: #fff;
+    font-family: AxisStd-Medium;
+    font-size: 18px;
+    margin: 0 auto 1.7em;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.arrow::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -1.4vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-color: #f6993f transparent transparent transparent;
+    border-width: 1.5vw 7vw 0 7vw;
+    border-radius: 8px;
+    z-index: 0;
+}
